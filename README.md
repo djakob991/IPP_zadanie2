@@ -69,6 +69,7 @@ Duże zadanie, część 2
 Zadanie drogi, część 2
 
 Jako drugą część dużego zadania należy zaimplementować program, który, korzystając z modułu zaimplementowanego w części pierwszej, udostępnia operacje na mapie dróg. Program obsługuje tylko jedną mapę dróg. Ponadto należy zaimplementować skrypt w bashu.
+
 Interfejs tekstowy
 
 Program czyta dane ze standardowego wejścia, wyniki wypisuje na standardowe wyjście, a informacje o błędach na standardowe wyjście diagnostyczne.
@@ -93,6 +94,7 @@ getRouteDescription;routeId
 Wywołuje na mapie dróg funkcję getRouteDescription z podanym parametrem. Jeśli wynik działania tej funkcji jest inny niż NULL, to wypisuje na standardowe wyjście jedną linię z wynikiem działania tej funkcji.
 
 Każde polecenie znajduje się w osobnej linii. Puste linie i linie zaczynające się znakiem # należy ignorować. W poleceniach nazwa miasta jest niepustym napisem niezawierającym kodów od 0 do 31 ani średnika, liczby są zapisywane przy podstawie 10. Spacje w nazwie miasta są istotne.
+
 Obsługa błędów
 
 Jeśli polecenie jest niepoprawne składniowo lub jego wykonanie zakończyło się błędem, czyli odpowiednia funkcja zakończyła się wynikiem false lub NULL, to wypisuje na standardowe wyjście diagnostyczne jednoliniowy komunikat
@@ -100,9 +102,11 @@ Jeśli polecenie jest niepoprawne składniowo lub jego wykonanie zakończyło si
 ERROR n
 
 gdzie n jest numerem linii w danych wejściowych zawierającym to polecenie. Linie numerujemy od jedynki i uwzględniamy ignorowane linie.
+
 Zakończenie działania programu
 
 Program po przetworzeniu wszystkich danych wejściowych powinien zakończyć się kodem wyjścia 0 (ang. exit code) i powinien zwolnić całą zaalokowaną pamięć.
+
 Skrypt
 
 Należy napisać skrypt, którego pierwszy parametr wskazuje (nazwa poprzedzona opcjonalnie ścieżką) na plik z wynikami działania funkcji getRouteDescription, każdy wynik w osobnej linii. Kolejne parametry (przynajmniej jeden) to numery dróg krajowych.
@@ -114,6 +118,7 @@ numer drogi krajowej;długość
 Jeśli w pliku nie ma informacji o żądanej drodze krajowej, to skrypt nic dla niej nie wypisuje.
 
 Zakładamy, że zawartość pliku wskazanego pierwszym parametrem skryptu jest poprawna. W szczególności dla danego numeru drogi krajowej jest w nim co najwyżej jedna o niej informacja. Natomiast skrypt powinien jak najdokładniej sprawdzać poprawność parametrów i jeśli jest ich za mało lub któryś z nich jest niepoprawny, to powinien zakończyć się kodem wyjścia 1 (ang. exit code). Jeśli parametry są poprawne, skrypt powinien zakończyć się kodem wyjścia 0.
+
 Dostarczamy
 
 Nie dostarczamy żadnego kodu źródłowego. Rozwiązanie drugiej części zadania powinno korzystać z własnego, ewentualnie samodzielnie zmodyfikowanego, rozwiązania części pierwszej.
