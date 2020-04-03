@@ -1,7 +1,7 @@
 # IPP_zadanie2
 Zadanie 2 z przedmiotu 'Indywidualny Projekt Programistyczny'
 
-# Treść zadania:
+## Treść zadania:
 
 Duże zadanie, część 1
 Zadanie drogi, część 1
